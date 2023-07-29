@@ -131,6 +131,11 @@
   jpTerminal.init();
   jpTerminal.setActive('#main-terminal');
 
+  jpTerminal.addCommand ({
+    name: 'Tour Vehicle',
+    summary: 'Acceso al Tour del Parque',
+    manPage: 'Tour de los Vehículos',
+    command: jpTerminal.WriteLine('Tour por el parque activo')
   jpTerminal.addCommand({
     name: 'music',
     summary: 'turn background music on or off',
